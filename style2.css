@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+#about {
+
+    height: auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 22vw 1fr;
+    grid-gap: 10px;
+    margin: auto 15px;
+}
+
+.about-items {
+    border-radius: 15px;
+    background: rgb(6, 4, 4);
+    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
+}
+
+.about-div {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 35px;
+}
+
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+.about-intro {
+    margin: 14px 11px;
+    color: wheat;
+}
+
+.about-intro span {
+    color: aqua;
+    text-shadow: 0 2px 2px black;
+}
+
+.about-intro h1 {
+    font-family: 'Quicksand', sans-serif;
+    margin: 40px 20px;
+    font-size: 2.4rem;
+    text-shadow: 0 2px 2px black;
+}
+
+.about-intro h4 {
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    color: beige;
+    font-weight: lighter;
+}
+
+.signature {
+    position: absolute;
+    right: 20px;
+    /* margin-top: 30px; */
+}
+
+.signature img {
+    height: 120px;
+    width: 220px;
+    filter: invert();
+}
+
+.test-skills {
+    height: auto;
+    display: flex;
+}
+
+.box-items {
+    padding: 15px;
+    height: 75vh;
+    width: 50%;
+    margin: 15px;
+    border-radius: 15px;
+    background: rgb(6, 4, 4);
+    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.slide span {
+    color: antiquewhite;
+    margin: 4px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.slide .work {
+    color: rgb(193, 183, 169);
+    font-size: 12px;
+
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.slide p {
+    margin: 8px 12px;
+    color: rgb(177, 169, 159);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.skill-cont {
+    display: flex;
+    overflow: hidden;
+    margin: 20px auto;
+
+}
+
+.skills-box {
+    height: 120px;
+    width: 120px;
+    margin: auto 20px;
+    border: 1px solid rgb(87, 107, 107);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills-box:hover {
+    border-color: rgb(76, 174, 174);
+}
+
+.skills-box img {
+    height: 80px;
+    width: fit-content;
+
+}
+
+#contact {
+    padding: 17px;
+}
+ .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px 10px;
+    border-radius: 15px;
+    background: rgb(113, 10, 10);
+    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
+    color: white;
+    height: 66vh;
+}
+.column span{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.column input {
+    margin: 14px 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+
+}
+
+.column button {
+    padding: 4px 25px;
+    line-height: 22px;
+    border-radius: 4px;
+    background-color: #5f5f5f;
+    border: none;
+    font-family: "Ysabeau SC", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    
+}
