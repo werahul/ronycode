@@ -1,225 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+/* for Ipad Screens */
 
-#about {
-
-    height: auto;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-rows: 80vh;
-    grid-template-columns: 22vw 1fr;
-    grid-gap: 10px;
-    margin: auto 15px;
-}
-
-.about-items {
-    border-radius: 15px;
-    background: rgb(6, 4, 4);
-    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
-}
-
-.about-div {
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.waviy {
-    position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
-    font-size: 35px;
-}
-
-.waviy span {
-    font-family: 'Alfa Slab One', cursive;
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i));
-
-}
-
-@keyframes waviy {
-
-    0%,
-    40%,
-    100% {
-        transform: translateY(0)
+@media (min-width: 481px) and (max-width : 968px) {
+    .first {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    20% {
-        transform: translateY(-20px)
+    .container-one {
+        width: 95vw;
+        border-radius: 15px;
+        justify-content: center;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .containerTwo {
+        width: 95vw;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .img img {
+        height: 23vh;
+    }
+
+    .top-margin {
+        font-size: 1.5rem;
+    }
+
+    .s-down img {
+        display: none;
+    }
+
+    #item1 {
+        width: 95vw;
+    }
+
+    #item2 {
+        display: none;
+    }
+    .project{
+        height: auto;
+    }
+    .container-grid{
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+        height: auto;
+        justify-content: center;
+    }
+    .project-box img{
+        height: 19vh;
+    }
+    /* About Sec */
+    #about{
+        height: 100vh;
+    }
+    .about-grid{
+        height: auto;
+    }
+    .about-items {
+        width: 95vw;
+        height: 100vh;
+    }
+    .about-div {
+        display: none;
+    }
+    .about-intro h1{
+        font-size: 3.5rem;
+    }
+    .about-intro h4{
+        font-size: 2rem;
+    }
+    .signature img {
+        width: 40vw;
+        height: 11vh;
+    }
+    .test-skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-items{
+        width: 95vw;
+    }
+    .slide img{
+        height: 20vh;
+        width: auto;
+    }
+    .slide span{
+        font-size: 3rem;
+    }
+    .slide p{
+        font-size: 2rem;
+    }
+    .slide .work{
+        font-size: 1.5rem;
     }
 }
 
-.about-intro {
-    margin: 14px 11px;
-    color: wheat;
-}
+/* For Mobile Screens */
 
-.about-intro span {
-    color: aqua;
-    text-shadow: 0 2px 2px black;
-}
-
-.about-intro h1 {
-    font-family: 'Quicksand', sans-serif;
-    margin: 40px 20px;
-    font-size: 2.4rem;
-    text-shadow: 0 2px 2px black;
-}
-
-.about-intro h4 {
-    font-family: 'Quicksand', sans-serif;
-    margin: 20px;
-    color: beige;
-    font-weight: lighter;
-}
-
-.signature {
-    position: absolute;
-    right: 20px;
-    /* margin-top: 30px; */
-}
-
-.signature img {
-    height: 120px;
-    width: 220px;
-    filter: invert();
-}
-
-.test-skills {
-    height: auto;
-    display: flex;
-}
-
-.box-items {
-    padding: 15px;
-    height: 75vh;
-    width: 50%;
-    margin: 15px;
-    border-radius: 15px;
-    background: rgb(6, 4, 4);
-    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.slide span {
-    color: antiquewhite;
-    margin: 4px 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.slide .work {
-    color: rgb(193, 183, 169);
-    font-size: 12px;
-
-}
-
-.slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.slide p {
-    margin: 8px 12px;
-    color: rgb(177, 169, 159);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-}
-
-.skill-cont {
-    display: flex;
-    overflow: hidden;
-    margin: 20px auto;
-
-}
-
-.skills-box {
-    height: 120px;
-    width: 120px;
-    margin: auto 20px;
-    border: 1px solid rgb(87, 107, 107);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.skills-box:hover {
-    border-color: rgb(76, 174, 174);
-}
-
-.skills-box img {
-    height: 80px;
-    width: fit-content;
-
-}
-
-#contact {
-    padding: 17px;
-}
- .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 4px 10px;
-    border-radius: 15px;
-    background: rgb(113, 10, 10);
-    background: linear-gradient(90deg, rgba(6, 4, 4, 0.7847514005602241) 46%, rgba(2, 16, 32, 1) 100%);
-    color: white;
-    height: 66vh;
-}
-.column span{
-    font-family: 'Quicksand', sans-serif;
-}
-
-.column input {
-    margin: 14px 10px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid aqua;
-    outline: none;
-    color: white;
-    font-size: 1em;
-    width: 100%;
-
-}
-
-.column button {
-    padding: 4px 25px;
-    line-height: 22px;
-    border-radius: 4px;
-    background-color: #5f5f5f;
-    border: none;
-    font-family: "Ysabeau SC", sans-serif;
-    font-weight: bolder;
-    cursor: pointer;
-    color: white;
-    width: 100%;
-    
-}
+@media (max-width: 480px) {
+    .first {
+      display: inline;
+    }
+  
+    .container-one {
+      width: 100%;
+      padding: .6rem 0;
+      border-radius: 0px;
+      margin: 0;
+    }
+  
+    .s-down img {
+      display: none;
+    }
+  
+    .containerTwo {
+      height: auto;
+      width: 100%;
+      border-radius: 0px;
+      margin: 0;
+    }
+  
+    .container-grid {
+      display: inline;
+    }
+  
+    #item1 {
+      display: inline;
+      height: auto;
+      width: 100%;
+      border-radius: 0px;
+    }
+  
+    .project-grid {
+      grid-template-columns: auto;
+      row-gap: 2rem;
+      height: auto;
+    }
+  
+    .project-box img {
+      height: 100%;
+      width: 68vw;
+    }
+  
+    #item2 {
+      display: none;
+    }
+  
+    #about {
+      height: 100%;
+      margin: 0;
+      ;
+    }
+  
+    .waviy {
+      display: inline;
+      margin-bottom: 20px;
+    }
+  
+    .about-intro h1 {
+      text-align: left;
+      font-size: 1.8rem;
+  
+    }
+  
+    .about-grid {
+      display: inline-block;
+      margin-bottom: .6rem;
+    }
+  
+    .about-intro {
+      padding: .5rem.3rem;
+      text-align: left;
+      word-spacing: .1rem;
+    }
+  
+    .signature img {
+      display: none;
+    }
+  
+    .test-skills {
+      height: 30vh;
+    }
+  
+    .slide img {
+      height: auto;
+      width: 26%;
+    }
+  
+    .test-skills {
+      display: inline;
+    }
+  
+    .box-items {
+      width: 100%;
+      margin: 0;
+      display: inline;
+    }
+  
+    .skill-cont {
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+    .skills-box {
+      height: 12vh;
+      width: 12vh;
+    }
+  
+    .main {
+      background-color: black;
+      height: 100%;
+      width: 100%;
+    }
+    form{
+        width: 72vw;
+    }
+  }
+  
